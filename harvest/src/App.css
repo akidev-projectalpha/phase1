@@ -25,8 +25,8 @@
 button {
   display: block;
   padding: 10px;
-  background-color:rgb(0,126,246);
-  /* background-color:  #3742fa ; */
+  /* background-color:rgb(0,126,246); */
+  background-color:  #3742fa ;
   font-size: 1em;
   color:white;
   width:300px;
