@@ -1,26 +1,19 @@
 import React from 'react';
-import hands from './img/hands-holding-smartphone-bar-chart-rocket-launch_1262-20647.jpg';
-import logo from "./img/logo.png" ;
 import './App.css';
-
-console.log(logo);
+import Nav from './pages/Nav';
+import Login from './pages/Login';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <div className = "left"  >
-        <img className="logo" src={logo} alt="logo" ></img>
-        <div className = "bar" >
-        <button type="button"> Log in using harvest </button>
-        <button> Saleforce(Sandbox) </button>
-        <button> Saleforce(Production,Developer) </button>
-        </div>
-        </div>
-        <div className = "right" >
-          <img src={hands} alt="mainImage" className = "mainImage"/>
-        </div>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path='/' exact component={Nav} ></Route>
+          <Route path='/login' component={Login}></Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
 export default App;
