@@ -1,11 +1,16 @@
 import React from 'react';
 import '../App.css';
+import LoginNav from './LoginNav';
+import LoginSidebar from './LoginSidebar';
 
 function Login() {
   return (
-    <div>
-        <h1>Log In Page</h1>
-    </div>
+    <body>
+        <LoginNav />
+        <LoginSidebar />
+        <div className='loginMain'>
+        </div>
+    </body>
   );
 }
 export default Login;
