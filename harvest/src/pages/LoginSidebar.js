@@ -10,12 +10,14 @@ function LoginSidebar() {
   return (
     <div className='sidebar'>
         <img className="loginLogo" src={logo} alt="logo" ></img>
-        <li className="fa fa-newspaper-o"> <a> Overview </a> </li>
-        <li className="fa fa-users"> <a> Recuit </a></li>
-        <li className="fa fa-clock-o"> <a>Reminder </a></li>
-        <li className="fa fa-comment-o"> <a>Message </a></li>
-        <li className="fa fa-american-sign-language-interpreting"> <a>Estimate </a></li>
+        <li className="fa fa-newspaper-o"> <a> Builds </a> </li>
+        <li className="fa fa-users"> <a> Connections </a></li>
+        <li className="fa fa-clock-o"> <a>Compare </a></li>
+        <li className="fa fa-comment-o"> <a>Insights </a></li>
+        <li className="fa fa-american-sign-language-interpreting"> <a>Workflows </a></li>
+        <li className="fa fa-users"> <a> Team </a></li>
         <li className="fa fa-cog"> <a>Settings </a></li>
+        <li className="fa fa-lock"> <a>Admin</a></li>
     </div>
   );
 }

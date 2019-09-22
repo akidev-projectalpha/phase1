@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../img/default.png';
 
 function LoginDev() {
   return (
@@ -12,10 +13,17 @@ function LoginDev() {
             </button>
           </form> 
         </div>
-
-        <div className='accountInfo'>
-          <h4>Dropdown</h4>
+        
+        <div className="accountInfo dropdown">
+        <img className="userPic" src={logo} alt="logo" ></img>
+        <button className="dropbtn">First Name Last Name <li className='fa fa-chevron-down '></li></button>
+        <div className="dropdown-content">
+        <a href="#">something</a>
+        <a href="#">something</a>
+        <a href="#">something</a>
         </div>
+        </div>
+
     </div>
   );
 }
